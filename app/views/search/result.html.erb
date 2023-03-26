@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <% @results.each do |r| %>
+        <div class="element">
+            <span>
+                Name: <%= r[:Name] %> <br/>
+                Type: <%= r[:Type]%> <br/>
+                Design by: <%= r["Designed by".to_sym]%>
+            </span>
+        </div>
+   <% end %>
+ </div>
